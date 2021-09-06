@@ -33,7 +33,7 @@ public class SequentialSearchFile {
 			}
 			else {
 				System.out.print("Please enter file name: ");// no command line parameters?
-			    fileName = s.nextLine();					 // prompt user for both
+			    fileName = s.nextLine();			     // prompt user for both
 			    System.out.print("Please enter search item: "); 
 			    searchItem = s.nextLine();
 			}
@@ -48,11 +48,11 @@ public class SequentialSearchFile {
 	public static boolean sequentialSearch (String fileName, String searchItem) {			
 		boolean result = false;								  // default response is not found
 		try {
-			Scanner f = new Scanner(new File(fileName));      // get a connection to the file
+			Scanner f = new Scanner(new File(fileName));      			// get a connection to the file
 			String fileItem;
 			while(f.hasNext())
 				{
-					fileItem = f.nextLine();			      // check each entry against the search item
+					fileItem = f.next();			      // check each entry against the search item
 					if(searchItem.equalsIgnoreCase(fileName)) 
 					{
 						result = true;						 // if found, set result to true
