@@ -53,7 +53,7 @@ public class SequentialSearchFile {
 			while(f.hasNext())
 				{
 					fileItem = f.next();			      // check each entry against the search item
-					if(searchItem.equalsIgnoreCase(fileName)) 
+					if(searchItem.equalsIgnoreCase(fileItem)) 
 					{
 						result = true;						 // if found, set result to true
 						break;								 // and break out of the while loop
